@@ -9,4 +9,4 @@ blur=cv2.GaussianBlur(invert_gray,(49,49), 0,0)
 invert_blur=cv2.bitwise_not(blur)
 #Output sketch image
 sketch=cv2.divide(gray,invert_blur,scale=255.0)
-cv2.imwrite("luffy_sketch.png",sketch)
+cv2.imwrite("luffy_sketch.jpg",sketch)
